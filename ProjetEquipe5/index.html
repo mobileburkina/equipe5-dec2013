@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset='utf-8' />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style type='text/css'>
+			body {color:red;}
+		</style>
+		<link rel="stylesheet" href="libs/jquery.mobile-1.3.2.css"/>
+		<script type="text/javascript" src="libs/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="libs/jquery.mobile-1.3.2.min.js"></script>
+
+		<title> Mon Application Mobile </title>
+
+	</head>
+	
+	<body>
+		<!-- ================== PAGE PRINCIPALE ==================== -->
+		<div data-role='page' id='pageprincipale'>
+			<div data-role='header'>
+				<h1> DISMOIOUMANGER </h1>
+			</div>
+			
+			<div data-role='content'>
+				<p>
+					Retrouvez un restaurant facilement dans les villes de Ouaga et de Bobo <br />
+				</p>
+				<a href=# data-role="button" data-icon="home" data-theme="b"> Choisir une ville	</a>
+				<ul data-role='listview' data-inset=true data-filter=true>
+					<li><a href='#ouaga' > Ouaga </a></li>
+					<li><a href='#bobo' > Bobo </a></li>
+				</ul>
+				<div class='image'>
+					<img src='images/plat.png' alt='' />
+				</div>
+			</div>
+			
+			<div data-role='footer'>
+				<h5> Copyright &copy; 2013 </h5>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!-- ================== PAGE OUAGADOUGOU ==================== -->
+		<div data-role='page' id='ouaga'>
+			<div data-role='header'>
+				<a href='#pageprincipale' data-icon='back' data-iconpos='nontext'></a>
+				<h1> Information sur Ouaga</h1>
+			</div>
+			
+			<div data-role='content'>
+			<h3> Bienvenu à Ouagadougou </h3>
+				<a href='#' data-role='button' data-icon='home' data-theme='b'> Choisir une catégorie </a>
+				<ul data-role='listview' data-inset=true data-filter=true>
+					<li><a href="information1.html" data-transition="pop">Liste des restaurants</a></li>
+					<li><a href='navigation1.html'>Specialités</a></li>
+				</ul> 
+			</div>
+			
+			<div data-role='footer'>
+				<h5> Copyright &copy; 2013</h5>
+			</div>
+		</div>
+		
+				<div data-role='page' id='ouaga_restaurant'>
+				<!-- Liste des restaurants de Ouaga -->
+					<div data-role='header'>
+						<a href='#ouaga' data-icon='back' data-iconpos='nontext'></a>
+						<h1> Restaurants Ouaga</h1>
+					</div>
+					
+					<div data-role='content'>
+						<a href='#ouaga_restaurant' data-role='button' data-icon='home' data-theme='b'> Choisir un restaurant </a>
+						<ul data-role='listview' data-inset=true data-filter=true>
+							<li><a href='#ouaga_restaurant_paradisio'>Paradisio</a></li>
+							<li><a href='#ouaga_restaurant_chez_diop'>Chez Diop</a></li>
+							<li><a href='#ouaga_restaurant_verdoyant'>Bon goût</a></li>
+							<li><a href='#ouaga_restaurant_vertgalant'>Le vert galant</a></li>
+                                                        <li><a href='#ouaga_restaurant_lecop_bleu'>Le coq bleu</a></li>
+						</ul> 
+					</div>
+					
+					<div data-role='footer'>
+						<h5> Copyright &copy; 2013</h5>
+					</div>
+				</div>
+		
+						<div data-role='page' id='ouaga_restaurant_chez_diop'>
+						<!-- Liste des restaurants de Ouaga -->
+							<div data-role='header'>
+								<a href='#ouaga_restaurant' data-icon='back' data-iconpos='nontext'></a>
+								<h1> Restaurants * Chez Diop </h1>
+							</div>
+							
+							<div data-role='content'>
+								<a href='#ouaga_restaurant' data-role='button' data-icon='home' data-theme='b'> Menu du restaurant </a>
+								<ul data-role='listview' data-inset=true data-filter=true>
+									<li><a href='#'> Riz sauce </a></li>
+									<li><a href='#'> Haricot </a></li>
+								</ul>
+								<div class='adresse'>
+									<b>Informations</b> <br />
+									Contact : 50 50 50 50 <br />
+									Situation : Sur l'avanue Charle De Gaules
+								</div>
+								<div id='note'>
+								<br />
+									<em> Note </em>: 9/10 
+								</div>
+								<br />
+								<div class='image'>
+									<img src='images/chez_diop.png' alt='' />
+								</div>
+							</div>
+					
+							<div data-role='footer'>
+								<h5> Copyright &copy; 2013</h5>
+							</div>
+						</div>
+						
+				<div data-role='page' id='ouaga_specialite'>
+				<!-- Liste des restaurants de Ouaga -->
+					<div data-role='header'>
+						<a href='#ouaga' data-icon='back' data-iconpos='nontext'></a>
+						<h1> Spécialités </h1>
+					</div>
+					
+					<div data-role='content'>
+						<a href='#ouaga_restaurant' data-role='button' data-icon='home' data-theme='b'> Choisir une spécialité </a>
+						<ul data-role='listview' data-inset=true data-filter=true>
+							<li><a href='#ouaga_specialite_africaine'> Africaine </a></li>
+							<li><a href='#ouaga_specialite_burkinabe'> Burkinabè </a></li>
+							<li><a href='#ouaga_specialite_ivoirienne'> Ivoirienne </a></li>
+							<li><a href='#ouaga_specialite_senegalaise'> Senegalaise </a></li>
+							<li><a href='#ouaga_specialite_europenne'> Europenne </a></li>
+						</ul> 
+					</div>
+					
+					<div data-role='footer'>
+						<h5> Copyright &copy; 2013</h5>
+					</div>
+				</div>
+		
+		
+		
+		
+		
+		<!-- ================== PAGE BOBO DIOULASSO ==================== -->
+		<div data-role='page' id='bobo'>
+			<div data-role='header'>
+				<a href='#pageprincipale' data-icon='back' data-iconpos='nontext'></a>
+				<h1> Information sur Bobo</h1>
+			</div>
+			
+			<div data-role='content'>
+			<h3> Bienvenu à Bobo Dioulasso </h3>
+				<a href='#' data-role='button' data-icon='home' data-theme='b'> Choisir une catégorie </a>
+				<ul data-role='listview' data-inset=true data-filter=true>
+					<li><a href='#bobo_restaurant'>Liste des restaurants</a></li>
+					<li><a href='#bobo_specialite'>Specialités</a></li>
+				</ul> 
+			</div>
+			
+			<div data-role='footer'>
+				<h5> Copyright &copy; 2013</h5>
+			</div>
+		</div>
+		
+				<div data-role='page' id='bobo_restaurant'>
+				<!-- Liste des restaurants de Bobo -->
+					<div data-role='header'>
+						<a href='#bobo' data-icon='back' data-iconpos='nontext'></a>
+						<h1> Restaurants Bobo</h1>
+					</div>
+					
+					<div data-role='content'>
+						<a href='#bobo_restaurant' data-role='button' data-icon='home' data-theme='b'> Choisir un restaurant </a>
+						<ul data-role='listview' data-inset=true data-filter=true>
+							<li><a href='#bobo_restaurant_chez_diop'>Chez Diop</a></li>
+							<li><a href='#bobo_restaurant_bongout'>Bon goût</a></li>
+						</ul> 
+					</div>
+					
+					<div data-role='footer'>
+						<h5> Copyright &copy; 2013</h5>
+					</div>
+				</div>
+		
+						<div data-role='page' id='bobo_restaurant_chez_diop'>
+						<!-- Liste des restaurants de Bobo -->
+							<div data-role='header'>
+								<a href='#bobo_restaurant' data-icon='back' data-iconpos='nontext'></a>
+								<h1> Restaurant * Chez Diop </h1>
+							</div>
+							
+							<div data-role='content'>
+								<a href='#bobo_restaurant' data-role='button' data-icon='home' data-theme='b'> Menu du restaurant </a>
+								<ul data-role='listview' data-inset=true data-filter=true>
+									<li><a href='#'> Riz sauce </a></li>
+									<li><a href='#'> Haricot </a></li>
+								</ul>
+								<div class='adresse'>
+									<b>Informations</b> <br />
+									Contact : 40 50 50 50 <br />
+									Situation : Non loin du grand marché
+								</div>
+							</div>
+					
+							<div data-role='footer'>
+								<h5> Copyright &copy; 2013</h5>
+							</div>
+						</div>
+						
+				<div data-role='page' id='bobo_specialite'>
+				<!-- Liste des restaurants de Bobo -->
+					<div data-role='header'>
+						<a href='#bobo' data-icon='back' data-iconpos='nontext'></a>
+						<h1> Spécialités </h1>
+					</div>
+					
+					<div data-role='content'>
+						<a href='#bobo_restaurant' data-role='button' data-icon='home' data-theme='b'> Choisir une spécialité </a>
+						<ul data-role='listview' data-inset=true data-filter=true>
+							<li><a href='#bobo_specialite_africaine'> Africaine </a></li>
+							<li><a href='#bobo_specialite_burkinabe'> Burkinabè </a></li>
+							<li><a href='#bobo_specialite_ivoirienne'> Ivoirienne </a></li>
+							<li><a href='#bobo_specialite_senegalaise'> Senegalaise </a></li>
+						</ul> 
+					</div>
+					
+					<div data-role='footer'>
+						<h5> Copyright &copy; 2013</h5>
+					</div>
+				</div>
+
+		-->
+	</body>
+</html>

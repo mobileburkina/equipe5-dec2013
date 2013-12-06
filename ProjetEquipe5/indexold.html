@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<!-- Ici je met le viewport, les feuilles de style et les librairies Jquery Mobile -->
+<title> Mon Application Mobile </title>
+<!-- Mise en place de viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- Lier la feuille de style -->
+<link rel="stylesheet" href="libs/jquery.mobile-1.3.2.css"/>
+<!-- Inclure les librairies Jquery et Jquery mobile -->
+<script type="text/javascript" src="libs/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="libs/jquery.mobile-1.3.2.min.js"></script>
+</head>
+
+
+<body>
+
+<div data-role="page" id="pageprincipale">
+<!-- Ceci est une page à diviser en 3 parties -->
+
+	<div data-role="header">
+	<!-- Entete de la page -->
+	<h1> DISMOIOUMANGER <h1/>
+	</div>
+
+	<div data-role="content">
+	<!-- Contenu de la page -->
+	<p> c'est une Base de Donnees fiable </p>
+	<!-- Ceci est un bouton -->
+	<a href=# data-role="button" data-icon="home" data-theme="b"> 		
+        Lancer la navette
+	</a>
+	<ul data-role="listview" data-inset=true data-filter=true>
+	<li><a href="information.html">Ouagadougou</a></li>
+        <li><a href="#renseignement">Bobo</a></li>
+	<li><a href="navigation.html" data-transition="pop">Recherche</a></li>
+	<li><a href="saisieinformation.html">Formulaire</a></li>
+        </ul> 
+	</div>
+
+	<div data-role="footer">
+	<!-- Pied de la page -->
+	<h5> Copyright &copy; </h5>
+	</div>
+</div>
+	<!-- Seconde page de l'application -->
+
+
+<!-- Troisième page de l'application -->
+<div data-role="page" id="renseignement">
+	<div data-role="header">
+        <a href="#pageprincipale" data-icon="back" data-iconpos="nontext"></a>
+	<h1> Information sur Bobo</h1>
+	
+	</div>
+<div data-role="content">
+	<!-- Contenu de la page -->
+	<p> Bienvenu à Bobo Dioulasso </p>
+	<!-- Ceci est un bouton -->
+	<a href=# data-role="button" data-icon="home" data-theme="b"> 		
+Bien manger à Bobo Dioulasso
+	</a>
+	<ul data-role="listview" data-inset=true data-filter=true>
+	<li><a href="#">Liste des Restaurant</a></li>
+        <li><a href="#">Specialites</a></li>
+        <li><a href="#">Cartographie</a></li>
+          </ul> 
+	</div>
+	<div data-role="footer">
+	<!-- Pied de la page -->
+	<h5> Copyright &copy; </h5>
+	</div>
+</div>
+
+
+</body>
+
+</html>
